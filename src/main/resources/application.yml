@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: hotel-booking
+
+jwt:
+  secretKeyString:
+  accessTokenExpirationInMs:
+  refreshTokenExpirationInMs:
+  issuer: dev.marvin
+
