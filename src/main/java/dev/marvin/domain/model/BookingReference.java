@@ -1,4 +1,4 @@
-package dev.marvin.model;
+package dev.marvin.domain.model;
 
 import jakarta.persistence.*;
 import lombok.Data;

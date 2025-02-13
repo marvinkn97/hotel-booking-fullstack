@@ -1,5 +1,6 @@
-package dev.marvin.model;
+package dev.marvin.domain.model;
 
+import dev.marvin.domain.enums.NotificationType;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;

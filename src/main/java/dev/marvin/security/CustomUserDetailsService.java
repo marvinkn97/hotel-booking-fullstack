@@ -1,7 +1,7 @@
 package dev.marvin.security;
 
-import dev.marvin.exception.ResourceNotFoundException;
-import dev.marvin.repository.UserRepository;
+import dev.marvin.dbaccess.UserRepository;
+import dev.marvin.errorhandling.ResourceNotFoundException;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;

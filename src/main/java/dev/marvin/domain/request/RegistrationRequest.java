@@ -1,4 +1,4 @@
-package dev.marvin.dto;
+package dev.marvin.domain.request;
 
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;

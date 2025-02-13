@@ -1,6 +1,6 @@
-package dev.marvin.repository;
+package dev.marvin.dbaccess;
 
-import dev.marvin.model.User;
+import dev.marvin.domain.model.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;

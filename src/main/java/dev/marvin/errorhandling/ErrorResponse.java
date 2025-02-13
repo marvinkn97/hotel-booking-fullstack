@@ -1,4 +1,4 @@
-package dev.marvin.exception;
+package dev.marvin.errorhandling;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
