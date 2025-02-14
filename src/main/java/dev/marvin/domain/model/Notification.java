@@ -1,32 +1,31 @@
 package dev.marvin.domain.model;
 
+import dev.marvin.domain.common.BaseEntity;
 import dev.marvin.domain.enums.NotificationType;
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-import org.hibernate.annotations.CreationTimestamp;
-
-import java.time.LocalDateTime;
+import lombok.*;
 
 @Entity
 @Table(name = "notifications")
-@Data
 @NoArgsConstructor
 @AllArgsConstructor
+@Getter
+@Setter
 @Builder
-public class Notification {
+public class Notification extends BaseEntity {
     @Id
     @SequenceGenerator(name = "notification_id_sequence", sequenceName = "notification_id_sequence")
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "notification_id_sequence")
+    @Column(name = "notification_id")
     private Long id;
+
     private String subject;
     private String to;
     private String body;
+
+    @Column(name = "booking_reference_number")
     private String bookingReference;
+
     @Enumerated(EnumType.STRING)
     private NotificationType notificationType;
-    @CreationTimestamp
-    private LocalDateTime createdAt;
 }

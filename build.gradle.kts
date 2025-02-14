@@ -32,6 +32,7 @@ dependencies {
 	implementation("com.stripe:stripe-java:28.3.0")
 	implementation("io.jsonwebtoken:jjwt-api:0.12.6")
 	implementation("io.jsonwebtoken:jjwt-gson:0.12.6")
+	implementation("org.springframework.boot:spring-boot-starter-mail")
 	compileOnly("org.projectlombok:lombok")
 	developmentOnly("org.springframework.boot:spring-boot-devtools")
 	developmentOnly("org.springframework.boot:spring-boot-docker-compose")

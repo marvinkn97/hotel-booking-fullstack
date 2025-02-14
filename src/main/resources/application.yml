@@ -2,6 +2,19 @@ spring:
   application:
     name: hotel-booking
 
+  mail:
+    host: smtp.gmail.com  # Replace with your SMTP server
+    port: 587               # Common ports: 465 (SSL), 587 (TLS), 25 (unsecured)
+    username: marvin.nyingi@gmail.com
+    password: hcua vtav nlsb zzwt
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+            required: true
+
 jwt:
   secretKeyString:
   accessTokenExpirationInMs:
